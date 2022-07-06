@@ -68,4 +68,30 @@ a{
 a:hover{
   background-color: #d7716aa9;
 }
+
+
+@media screen and (max-width: 420px) {
+  .head{
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  a{
+  color: #D7726A;
+  background-color: white;
+  padding: 0rem;
+  border-radius: 0rem;
+
+}
+a:hover{
+  border-bottom: 1px solid #D7726A;
+  background-color: white;
+  cursor: pointer;
+}
+}
 </style>
