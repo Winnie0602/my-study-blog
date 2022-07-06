@@ -111,4 +111,35 @@ img {
     height: 28px;
 }
 
+
+@media screen and (max-width: 550px) {
+    .titleAndButton{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    h3{
+        font-weight: 500;
+        font-size:18px;
+        margin-bottom:7px;
+    }
+    img{
+        width:30px;
+        height: 30px;
+    }
+    .pencil{
+        width:23px;
+        height: 23px;
+    }
+    .tagsContainer{
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+    }
+    .tag{
+        background-color: #D7726A;
+        margin: 5px 3px;
+}
+}
+
 </style>
