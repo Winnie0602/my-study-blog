@@ -39,4 +39,9 @@
   overflow: scroll;
   
 }
+@media screen and (max-width: 820px) {
+  .backGround-img{
+    display: none;
+  }
+}
 </style>
