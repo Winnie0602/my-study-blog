@@ -5,11 +5,11 @@
     <div class="post-head">
       <h2>{{post.title}}</h2>
       <div>
-        <span v-for="tag in post.tags" :key="tag">
-        <router-link :to="{name: 'Tags', params:{tag} }">
-            # {{ tag }}
-        </router-link>
-      </span> 
+        <span v-for="tag in post.tags" :key="tag" class="tagsContainer">
+          <router-link :to="{name: 'Tags', params:{tag} }" class="tag">
+              # {{ tag }}
+          </router-link>
+        </span> 
       </div>
     </div>
     <div class="body">
@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style scoped>
-a{
+.tag{
     text-decoration: none;
     color: white;
     background-color: #275660;
@@ -71,6 +71,25 @@ P{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 1310px) {
+    h2{
+    margin: 0.5rem 0rem;
+    font-size: 20px;
+  }
+    .post-head{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  p{
+    margin-top: 20px;
+  }
+  .tag{
+      background-color: #275660;
+      margin: 10px;
+  }
 }
 
 </style>
