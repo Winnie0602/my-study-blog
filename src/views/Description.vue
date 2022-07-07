@@ -86,9 +86,17 @@ P{
   p{
     margin-top: 20px;
   }
+  .tagsContainer{
+    max-width: 100px;
+    display: flex;
+  }
   .tag{
-      background-color: #275660;
-      margin: 10px;
+      background-color: white;
+      margin: 0px;
+      color:#275660;
+      border-bottom: 1px solid #275660;
+      border-radius: 0px;
+      padding: 0;
   }
 }
 
